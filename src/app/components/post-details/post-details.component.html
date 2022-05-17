@@ -1,3 +1,5 @@
-<div class="cb">
-  {{post?.body}}
+<div *ngIf="post">
+  <div>id:{{post.id}}</div>
+  <div>name:{{post.title}}</div>
+  <div>email:{{post.body}}</div>
 </div>

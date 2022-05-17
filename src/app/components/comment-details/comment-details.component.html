@@ -1,3 +1,6 @@
-<div class="cb">
-  {{comment?.name}}
+<div *ngIf="comment">
+  <div>id:{{comment.id}}</div>
+  <div>name:{{comment.name}}</div>
+  <div>email:{{comment.body}}</div>
 </div>
+
