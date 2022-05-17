@@ -1,0 +1,9 @@
+<div>
+  {{user.name}}===
+<!--based on father-->
+<!--  <a routerLink="user-details/{{user.id}}"> user details</a>-->
+
+
+<!--<<a [routerLink]="['user-details', user.id]" [state]="{data:user}">user details</a>-->
+ <button (click)="navigateMe(user)">details</button>
+</div>
