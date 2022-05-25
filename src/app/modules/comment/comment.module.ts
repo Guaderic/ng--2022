@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CommentRoutingModule } from './comment-routing.module';
-import {CommentService} from "./services";
+import {CommentResolver, CommentService} from "./services";
 import {HttpClientModule} from "@angular/common/http";
 import { CommentsComponent } from './components/comments/comments.component';
 import { CommentComponent } from './components/comment/comment.component';
@@ -20,6 +20,7 @@ import { CommentDetailsComponent } from './components/comment-details/comment-de
     CommentRoutingModule,
     HttpClientModule
   ],
-  providers:[CommentService]
+  providers:[CommentService,
+              CommentResolver]
 })
 export class CommentModule { }

@@ -14,9 +14,11 @@ export class UserDetailsComponent implements OnInit {
               private userService:UserService) { }
  user:IUser
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe(({id})=>{
-      this.userService.getById(id).subscribe(value => this.user = value)
-    })
+    // this.activatedRoute.params.subscribe(({id})=>{
+    //   this.userService.getById(id).subscribe(value => this.user = value)}
+    this.activatedRoute.data.subscribe(({data})=> this.user = data)
   }
+
+
 
 }
