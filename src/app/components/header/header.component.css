@@ -1,0 +1,14 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  height: 50px;
+  background: cadetblue;
+}
+a{
+  text-decoration: none;
+  color: snow;
+  padding: 0 25px;
+  font-size: 25px;
+}
