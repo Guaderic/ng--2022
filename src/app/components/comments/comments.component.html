@@ -1,0 +1,13 @@
+<div><label><input type="text"
+                   #addMemberInput
+                   (input)="onInput(addMemberInput.value)"
+                    [value]="newMember" >
+</label>
+  <button (click)="addMember()">Add</button>
+</div>
+<ul>
+  <li *ngFor="let member of members">{{member}}</li>
+</ul>
+<p *ngIf="errorMessage">
+  {{errorMessage}}
+</p>
